@@ -1,0 +1,36 @@
+.input-text {
+    border: 1px solid @white-gainsboro;
+    height: 45px;
+    width: auto;
+    .p-lr(15; 15);
+    text-transform: uppercase;
+  
+    &:hover,
+    &:hover:placeholder-shown {
+      border: 1px solid @grey-very-light-grey;
+    }
+  
+    &:invalid {
+      border: 2px solid @red-mona-lisa;
+    }
+  
+    &:placeholder-shown {
+      border: 1px solid @white-gainsboro;
+    }
+  
+    &:focus,
+    &:focus:placeholder-shown {
+      outline: none;
+      border: 2px solid @grey-charcoal;
+    }
+  
+    @media (min-width: $tablet-width) {
+      height: 52px;
+      padding-left: 16px;
+    }
+}
+  
+  .input-text::placeholder {
+    text-transform: uppercase;
+    color: $grey-charcoal;
+}

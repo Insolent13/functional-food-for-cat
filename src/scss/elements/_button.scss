@@ -1,0 +1,23 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+  
+  
+.button-action {
+    color: $white;
+    background-color: $green-apple;
+  
+    &:hover,
+    &:focus {
+      background-color: $green-limeade;
+    }
+  
+    &:active {
+      color: $white-alpha-030;
+    }
+}

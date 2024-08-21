@@ -1,0 +1,25 @@
+.textarea {
+    border: 1px solid $white-gainsboro;
+    padding: 9px 5px 13px 15px;
+    text-transform: uppercase;
+    resize: none;
+  
+    &:hover {
+      border: 1px solid $grey-very-light-grey;
+    }
+  
+    &:focus {
+      outline: none;
+      border: 2px solid @grey-charcoal;
+    }
+  
+  
+    @media (min-width: @tablet-width) {
+      padding: 13px 5px 13px 18px;
+    }
+  }
+  
+  .textarea::placeholder {
+    text-transform: uppercase;
+    color: @grey-charcoal;
+  }
