@@ -1,0 +1,30 @@
+.programs {
+    margin-bottom: 27px;
+    transition: all 0.75s ease-out;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 45px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-bottom: 41px;
+    }
+  }
+
+  .programs__wrapper {
+    min-width: $mobile;
+    width: 87%;
+    margin: 0 auto;
+  
+    @media (min-width: $tablet-width) {
+      min-width: $tablet;
+      width: 84%;
+    }
+  
+    @media (min-width: $desktop-width) {
+      .wrap(@desktop);
+      width: $desktop;
+      margin: 0 auto;
+      
+    }
+  }

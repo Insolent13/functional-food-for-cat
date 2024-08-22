@@ -1,0 +1,29 @@
+.example {
+    background-color: $white-white-smoke-light;
+    padding-top: 27px;
+    padding-bottom: 25px;
+  
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+      padding: 0;
+      background-image: linear-gradient(to top, $white-white-smoke-light 462px, transparent 462px);
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-bottom: 64px;
+    }
+  }
+
+  .example__wrapper {
+    @media (min-width: $tablet-width) {
+      min-width: @tablet;
+      width: 84%;
+      margin: 0 auto;
+    }
+  
+    @media (min-width: @desktop-width) {
+      .wrap(@desktop);
+      display: flex;
+      justify-content: space-between;
+    }
+  }

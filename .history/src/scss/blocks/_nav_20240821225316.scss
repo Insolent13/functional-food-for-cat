@@ -1,0 +1,7 @@
+.main-nav {
+    position: relative;
+  
+    @media (min-width: @desktop-width) {
+      max-width: 600px;
+    }
+  }

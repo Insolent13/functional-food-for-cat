@@ -1,0 +1,32 @@
+.copyright__link {
+    .wrap(@mobile);
+    .p-tb(21; 22);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .arial();
+    .font(n; 400; 16; 18);
+    color: @grey-charcoal;
+  
+    & .copyright__logo {
+      color: @grey-dim-gray;
+    }
+  
+    &:hover .copyright__logo,
+    &:focus .copyright__logo {
+      color: @green-apple;
+    }
+  
+    &:active {
+      opacity: 0.3;
+    }
+  
+    @media (min-width: @tablet-width) {
+      width: auto;
+      padding: 0;
+  
+      & .copyright__logo {
+        margin-left: 22px;
+      }
+    }
+  }

@@ -1,0 +1,12 @@
+.programs {
+    margin-bottom: 27px;
+    transition: all 0.75s ease-out;
+  
+    @media (min-width: @tablet-width) {
+      margin-bottom: 45px;
+    }
+  
+    @media (min-width: @desktop-width) {
+      margin-bottom: 41px;
+    }
+  }

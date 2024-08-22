@@ -1,0 +1,16 @@
+.footer-location__wrapper {
+    position: relative;
+    min-width: $mobile;
+    width: 87%;
+    margin: 0 auto;
+  
+    @media (min-width: $tablet-width) {
+        width: $tablet;
+        margin: 0 auto;
+        padding: 0;
+    }
+  
+    @media (min-width: $desktop-width) {\
+      .wrap(@desktop);
+    }
+  }

@@ -1,0 +1,149 @@
+.promo {
+    min-height: 480px;
+    margin-bottom: 22px;
+    color: $white;
+    background-image:
+      linear-gradient(to right, $green-apple calc(50% - 200px), $green-apple-alpha-050 calc(50% - 160px), $green-apple-alpha-050 calc(50% + 160px), $green-apple calc(50% + 200px)),
+      url("../img/background/promo-background-mobile@1x.jpg"),
+      linear-gradient($green-apple, $green-apple);
+    background-position:
+      0 0,
+      calc(50% - 33px) top,
+      0 0;
+    background-size: auto 302px;
+    background-repeat: no-repeat;
+    transition: all 0.75s ease-out;
+  
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to right, $green-apple calc(50% - 200px), $green-apple-alpha-050 calc(50% - 160px), $green-apple-alpha-050 calc(50% + 160px), $green-apple calc(50% + 200px)),
+        url("../img/background/promo-background-mobile@2x.jpg"),
+        linear-gradient($green-apple, $green-apple);
+    }
+  
+    @media (min-width: $tablet-width) {
+      min-height: 810px;
+      color: $black;
+      background-image: none;
+      margin-bottom: 0;
+    }
+  
+    @media (min-width: $desktop-width) {
+      min-height: 590px;
+      margin-bottom: 45px;
+    }
+  }
+
+  .promo__wrapper {
+    position: relative;
+    width: $mobile;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 27px;
+  
+    @media (min-width: $tablet-width) {
+      width: $tablet;
+      margin: 0 auto;
+      padding: 0;
+      padding-left: 82px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      width: $desktop;
+      margin: 0 auto;
+      padding: 0;
+      padding-left: 80px;
+    }
+  }
+
+  .promo__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    transition: all 0.75s ease-out;
+  
+    @media (min-width: $tablet-width) {
+      width: auto;
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 41px;
+      margin-left: 5px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-top: 82px;
+      margin-left: 0;
+    }
+  }
+
+  .promo__slogan {
+    margin-top: 0;
+    margin-bottom: 29px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  
+    @media (min-width: $tablet-width) {
+      width: auto;
+      margin-bottom: 49px;
+      margin-left: 6px;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 400;
+      text-align: left;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+      margin-bottom: 51px;
+    }
+  }
+
+  .promo__image {
+    width: 280px;
+    height: 270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+    transition: all 0.75s ease-out;
+  
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 201px;
+      left: 0;
+      width: $tablet;
+      height: 609px;
+      z-index: -1;
+    }
+  
+    @media (min-width: $desktop-width) {
+      width: 552px;
+      height: 499px;
+      top: 0;
+      left: calc(50% - 162px);
+    }
+  }
+
+  .promo__link {
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  
+    @media (min-width: $tablet-width) {
+      width: 244px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      
+      .font(n; 400; 20; 20);
+    }
+  }

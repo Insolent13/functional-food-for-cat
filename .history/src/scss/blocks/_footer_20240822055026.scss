@@ -1,0 +1,15 @@
+.page-footer__top--background {
+    background-color: $white-white-smoke;
+  }
+
+  .page-footer__bottom {
+    background-color: white-white-smoke;
+  
+    @media (min-width: @tablet-width) {
+      .p-tb(53; 57);
+    }
+  
+    @media (min-width: @desktop-width) {
+      .p-tb(58; 57);
+    }
+  }

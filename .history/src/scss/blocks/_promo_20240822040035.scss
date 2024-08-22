@@ -1,0 +1,53 @@
+.promo {
+    min-height: 480px;
+    margin-bottom: 22px;
+    color: $white;
+    background-image:
+      linear-gradient(to right, $green-apple calc(50% - 200px), $green-apple-alpha-050 calc(50% - 160px), $green-apple-alpha-050 calc(50% + 160px), $green-apple calc(50% + 200px)),
+      url("../img/background/promo-background-mobile@1x.jpg"),
+      linear-gradient($green-apple, $green-apple);
+    background-position:
+      0 0,
+      calc(50% - 33px) top,
+      0 0;
+    background-size: auto 302px;
+    background-repeat: no-repeat;
+    transition: all 0.75s ease-out;
+  
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to right, $green-apple calc(50% - 200px), $green-apple-alpha-050 calc(50% - 160px), $green-apple-alpha-050 calc(50% + 160px), $green-apple calc(50% + 200px)),
+        url("../img/background/promo-background-mobile@2x.jpg"),
+        linear-gradient($green-apple, $green-apple);
+    }
+  
+    @media (min-width: $tablet-width) {
+      min-height: 810px;
+      color: $black;
+      background-image: none;
+      margin-bottom: 0;
+    }
+  
+    @media (min-width: $desktop-width) {
+      min-height: 590px;
+      margin-bottom: 45px;
+    }
+  }
+
+  .promo__wrapper {
+    position: relative;
+    width: $mobile;
+    margin: 0 auto;
+    
+    padding-top: 27px;
+  
+    @media (min-width: $tablet-width) {
+      .wrap(@tablet);
+      padding-left: 82px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      .wrap(@desktop);
+      padding-left: 80px;
+    }
+  }

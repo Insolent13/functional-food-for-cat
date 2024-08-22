@@ -1,0 +1,15 @@
+.example {
+    background-color: $white-white-smoke-light;
+    padding-top: 27px;
+    .p-tb(27; 25);
+  
+    @media (min-width: @tablet-width) {
+      background-color: transparent;
+      padding: 0;
+      background-image: linear-gradient(to top, @white-white-smoke-light 462px, transparent 462px);
+    }
+  
+    @media (min-width: @desktop-width) {
+      padding-bottom: 64px;
+    }
+  }

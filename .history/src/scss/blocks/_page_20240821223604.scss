@@ -1,0 +1,22 @@
+.page {
+    height: 100%;
+}
+  
+  .page__body {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    min-width: 280px;
+    min-height: 100%;
+    color: $black;
+    background-color: $bg-color;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+  

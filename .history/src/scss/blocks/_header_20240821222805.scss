@@ -1,0 +1,21 @@
+.page-header {
+    transition: all 0.75s ease-out;
+    min-width: $mobile;
+  
+    @media (min-width: $tablet-width) {
+      width: 84%;
+      min-width: $tablet;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .m-tb(24; 64
+      mt
+    }
+  
+    @media (min-width: $desktop-width) {
+      .wrap($desktop);
+      flex-direction: row;
+      margin-bottom: 32px;
+      .m-tb(53; 29);
+    }
+}

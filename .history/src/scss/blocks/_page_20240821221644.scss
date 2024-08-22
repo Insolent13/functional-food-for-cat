@@ -1,0 +1,38 @@
+.page {
+    height: 100%;
+}
+  
+  .page__body {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", "Arial", sans-serif;
+    .font();
+    min-width: 280px;
+    min-height: 100%;
+    color: $black;
+    background-color: $bg-color;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+  
+.page__body--background {
+    @media (min-width: $desktop-width) {
+      background-image:
+        linear-gradient(to right, $green-apple-alpha-050, green-apple-alpha-050 720px, @green-apple 900px),
+        url("../img/background/page-background-desktop@1x.jpg"),
+        linear-gradient(to right, @green-apple, @green-apple);
+      background-position: 50vw top;
+      background-size: auto 694px;
+      background-repeat: no-repeat;
+      z-index: -1;
+  
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient(to right, @green-apple-alpha-050, @green-apple-alpha-050 720px, @green-apple 900px),
+          url("../img/background/page-background-desktop@2x.jpg"),
+          linear-gradient(to right, @green-apple, @green-apple);
+      }
+    }
+  }
