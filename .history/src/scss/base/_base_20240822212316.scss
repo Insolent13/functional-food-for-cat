@@ -6,6 +6,15 @@ html {
 
 
 
+
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
 *,
 *::before,
 *::after {

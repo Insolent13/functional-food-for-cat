@@ -6,6 +6,17 @@ html {
 
 
 
+img {
+	display: block;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
 *,
 *::before,
 *::after {
