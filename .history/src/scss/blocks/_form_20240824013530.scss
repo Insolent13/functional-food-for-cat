@@ -1,0 +1,9 @@
+.form__list {
+    font-size: 16px;
+    .font(n; 400; 16; 18);
+    color: @grey-charcoal;
+  
+    @media (min-width: @tablet-width) {
+      .font(n; 400; 20; 30);
+    }
+  }

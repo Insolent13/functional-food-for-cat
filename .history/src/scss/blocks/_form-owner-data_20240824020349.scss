@@ -1,0 +1,124 @@
+.owner-data {
+    margin-bottom: 23px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 63px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-bottom: 67px;
+    }
+  }
+
+  .owner-info__title {
+    margin-bottom: 35px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 76px;
+  
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  .owner-info__list {
+    min-width: $mobile;
+    width: 87%;
+    margin: 0 auto;
+    transition: all 0.75s ease-out;
+  
+    @media (min-width: $tablet-width) {
+        min-width: $tablet;
+        width: 84%;
+        padding-left: 40px;
+        padding-right: 36px;
+    }
+  
+    @media (min-width: $desktop-width) {
+        width: $desktop;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 80px;
+    }
+  }
+
+  .owner-info__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  .owner-info__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .owner-info__label {
+    margin-right: 14px;
+    text-transform: uppercase;
+  
+    @media (min-width: $tablet-width) {
+      margin-right: 18px;
+    }
+  }
+
+  .owner-info__input {
+    flex-grow: 1;
+    padding-right: 40px;
+  
+    &:invalid ~ .owner-info__icon {
+      color: $red-mona-lisa;
+    }
+  
+    &:placeholder-shown ~ .owner-info__icon {
+      color: $grey-nero;
+    }
+  
+    &:focus ~ .owner-info__icon {
+      color: $green-apple;
+    }
+  
+    @media (min-width: $tablet-width) {
+      padding-right: 50px;
+    }
+  }
+
+  .owner-info__icon {
+    position: absolute;
+    color: @grey-nero;
+  
+    &--email {
+      top: calc(50% - 7px);
+      right: 16px;
+      width: 19px;
+      height: 14px;
+    }
+  
+    &--phone {
+      top: calc(50% - 8px);
+      right: 13px;
+      width: 20px;
+      height: 19px;
+    }
+  
+    @media (min-width: @tablet-width) {
+      &--email {
+        right: 19px;
+      }
+  
+      &--phone {
+        right: 17px;
+      }
+    }
+  }

@@ -1,0 +1,74 @@
+.owner-data {
+    margin-bottom: 23px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 63px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-bottom: 67px;
+    }
+  }
+
+  .owner-info__title {
+    margin-bottom: 35px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 76px;
+  
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  .owner-info__list {
+    min-width: $mobile;
+    width: 87%;
+    margin: 0 auto;
+    transition: all 0.75s ease-out;
+  
+    @media (min-width: $tablet-width) {
+        min-width: $tablet;
+        width: 84%;
+        padding-left: 40px;
+        padding-right: 36px;
+    }
+  
+    @media (min-width: $desktop-width) {
+        width: $desktop;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 80px;
+    }
+  }
+
+  .owner-info__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  .owner-info__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .owner-info__label {
+    margin-right: 14px;
+    text-transform: uppercase;
+  
+    @media (min-width: $tablet-width) {
+      margin-right: 18px;
+    }
+  }

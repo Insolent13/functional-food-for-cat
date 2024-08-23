@@ -1,0 +1,43 @@
+.owner-data {
+    margin-bottom: 23px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 63px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-bottom: 67px;
+    }
+  }
+
+  .owner-info__title {
+    margin-bottom: 35px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 76px;
+  
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  .owner-info__list {
+    min-width: $mobile;
+    width: 87%;
+    margin: 0 auto;
+    transition: all 0.75s ease-out;
+  
+    @media (min-width: $tablet-width) {
+      min-width: $tablet;
+      width: 84%;
+      .p-lr(40; 36);
+    }
+  
+    @media (min-width: @desktop-width) {
+      .wrap(@desktop);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 80px;
+    }
+  }

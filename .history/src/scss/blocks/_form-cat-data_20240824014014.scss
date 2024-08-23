@@ -1,0 +1,22 @@
+.cat-data {
+    margin-bottom: 26px;
+    transition: all 0.75s ease-out;
+  
+    @media (min-width: $tablet-width) {
+        min-width: $tablet;
+      width: 84%;
+      margin: 0 auto 73px;
+      padding-left: 40px;
+      padding-right: 36px;
+    }
+  
+    @media (min-width: $desktop-width) {
+        width: $desktop;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 80px;
+        margin-bottom: 67px;
+    }
+  }

@@ -1,0 +1,11 @@
+.other-data {
+    margin-bottom: 15px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 17px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-bottom: 24px;
+    }
+  }

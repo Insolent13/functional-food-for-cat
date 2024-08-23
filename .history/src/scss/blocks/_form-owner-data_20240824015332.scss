@@ -1,0 +1,23 @@
+.owner-data {
+    margin-bottom: 23px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 63px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-bottom: 67px;
+    }
+  }
+
+  .owner-info__title {
+    margin-bottom: 35px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 76px;
+  
+      & br {
+        display: none;
+      }
+    }
+  }
