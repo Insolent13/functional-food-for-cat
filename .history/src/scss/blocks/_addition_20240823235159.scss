@@ -1,0 +1,142 @@
+.addition {
+    padding-top: 13px;
+    padding-bottom: 17px;
+    margin-bottom: -1px;
+    border-top: 1px solid $white-white-smoke-dark;
+    border-bottom: 1px solid $white-white-smoke-dark;
+    transition: all 0.75s ease-out;
+  
+    @media (min-width: $tablet-width) {
+      padding: 26px 38px 27px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border: 1px solid $white-white-smoke-dark;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding: 15px 0 17px;
+      align-items: baseline;
+      border-left: none;
+      border-right: none;
+    }
+  }
+
+  .addition__data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    @media (min-width: $tablet-width) {
+      flex: none;
+      width: 632px;
+      margin: 0 38px 25px 0;
+    }
+  
+    @media (min-width: $desktop-width) {
+      width: 612px;
+      margin-bottom: 0;
+      align-items: baseline;
+    }
+  }
+
+  .addition__title {
+    width: $mobile;
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+  
+    @media (min-width: $desktop-width) {
+      flex-grow: 1;
+    }
+  }
+
+  .addition__list {
+    width: $mobile;
+    margin-top: 0;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+  
+    @media (min-width: $tablet-width) {
+      justify-content: flex-end;
+      margin-bottom: 0;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+  
+    @media (min-width: $desktop-width) {
+      width: 288px;
+      flex: none;
+      justify-content: space-between;
+    }
+  }
+
+  .addition__price {
+    text-transform: uppercase;
+  
+    @media (min-width: $tablet-width) {
+      min-width: 92px;
+      margin: 0;
+      text-align: right;
+    }
+  }
+
+  .addition__buy {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  
+    @media (min-width: $tablet-width) {
+      flex-grow: 1;
+      min-width: 120px;
+      max-width: 632px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      width: 244px;
+    }
+  }
+
+  .addition__button--action {
+    color: $white;
+    background-color: $green-apple;
+
+  &:hover,
+  &:focus {
+    background-color: $green-limeade;
+  }
+
+  &:active {
+    color: $white-alpha-030;
+  }
+}
+
+.addition__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}

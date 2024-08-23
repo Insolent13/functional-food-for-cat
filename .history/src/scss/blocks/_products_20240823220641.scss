@@ -1,0 +1,16 @@
+.products {
+    margin: 0 auto 25px;
+  
+    @media (min-width: $tablet-width) {
+      min-width: $tablet;
+      width: 84%;
+      margin: 0 auto 9px;
+    }
+  
+    @media (min-width: $desktop-width) {
+        width: $desktop;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 17px;
+    }
+  }

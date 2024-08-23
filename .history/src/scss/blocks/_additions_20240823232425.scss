@@ -1,0 +1,7 @@
+.additions__title-container {
+    margin-bottom: 33px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 77px;
+    }
+  }

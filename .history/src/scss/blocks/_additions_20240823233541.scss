@@ -1,0 +1,30 @@
+.additions__title-container {
+    margin-bottom: 33px;
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 77px;
+    }
+  }
+
+  .additions__wrapper {
+    min-width: $mobile;
+    width: 87%;
+    margin: 0 auto 35px;
+    transition: all 0.75s ease-out;
+  
+    @media (min-width: $tablet-width) {
+      min-width: $tablet;
+      width: 84%;
+      margin-bottom: 76px;
+      transition-duration: 0s;
+    }
+  
+    @media (min-width: $desktop-width) {
+        width: $desktop;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 86px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }

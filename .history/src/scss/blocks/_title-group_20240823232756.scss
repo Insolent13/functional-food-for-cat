@@ -1,0 +1,36 @@
+.title-group__container {
+    position: relative;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $green-apple;
+      z-index: -1;
+    }
+  
+    @media (min-width: $tablet-width) {
+      &::before {
+        top: 22px;
+      }
+    }
+  }
+
+  .title-group__wrapper {
+    min-width: @mobile;
+    width: 87%;
+    margin: 0 auto;
+  
+    @media (min-width: @tablet-width) {
+      min-width: @tablet;
+      width: 84%;
+      .p-lr(40; 36);
+    }
+  
+    @media (min-width: @desktop-width) {
+      .wrap(@desktop);
+    }
+  }
