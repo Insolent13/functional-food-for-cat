@@ -1,0 +1,23 @@
+.page-header {
+    transition: all 0.75s ease-out;
+    min-width: $mobile;
+  
+    @media (min-width: $tablet-width) {
+      width: 84%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+      margin-bottom: 64px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      w
+      margin: 0 auto;
+      padding: 0;
+      flex-direction: row;
+      margin-bottom: 32px;
+      margin-top: 53px;
+      margin-bottom: 29px;
+    }
+}
