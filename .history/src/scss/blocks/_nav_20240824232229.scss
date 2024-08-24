@@ -148,11 +148,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 18px;
-    padding-bottom: 8px;
+    pb8
+    .p-tb(18; 8);
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 16px;
-    padding-bottom: 6px;
+  @media (min-width: @desktop-width) {
+    .p-tb(16; 6);
   }
 }

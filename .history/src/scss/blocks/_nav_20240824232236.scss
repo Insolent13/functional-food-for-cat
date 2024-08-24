@@ -152,7 +152,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 16px;
-    padding-bottom: 6px;
+    .p-tb(16; 6);
   }
 }
